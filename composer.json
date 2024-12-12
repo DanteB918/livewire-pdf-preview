@@ -1,0 +1,25 @@
+{
+    "name": "dante918/livewire-pdf-preview",
+    "description": "Adds a component to easily preview livewire PDFs",
+    "require": {
+        "livewire/livewire": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dante918\\LivewirePdfPreview\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dante918\\LivewirePdfPreview"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Dante Bradshaw",
+            "email": "plansuperior@gmail.com"
+        }
+    ]
+}
