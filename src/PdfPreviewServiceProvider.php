@@ -3,11 +3,14 @@
 namespace DanteB918\LivewireFilePreview;
 
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
 
 class PdfPreviewServiceProvider extends ServiceProvider
 {
     public function boot()
     {
+        Livewire::component('livewire-pdf-preview', LivewirePdfPreview::class);
+
         // Define publishable assets
         $this->publishes([
             __DIR__ . '../resources/js' => public_path('vendor/livewire-pdf-preview/js'),

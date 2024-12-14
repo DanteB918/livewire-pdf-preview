@@ -12,7 +12,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DanteB918\\LivewirePdfPreview"
+                "DanteB918\\PdfPreviewServiceProvider"
             ]
         }
     },
