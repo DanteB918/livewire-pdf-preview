@@ -1,6 +1,6 @@
 <?php
 
-namespace DanteB918\LivewireFilePreview;
+namespace DanteB918;
 
 use Livewire\Component;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
