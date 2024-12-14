@@ -1,3 +1,3 @@
 ## Installation
 
-`composer require dante918/livewire-pdf-preview`
+`composer require danteb918/livewire-pdf-preview`

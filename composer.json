@@ -1,18 +1,18 @@
 {
-    "name": "dante918/livewire-pdf-preview",
+    "name": "danteb918/livewire-pdf-preview",
     "description": "Adds a component to easily preview livewire PDFs",
     "require": {
         "livewire/livewire": "^3.5"
     },
     "autoload": {
         "psr-4": {
-            "Dante918\\LivewirePdfPreview\\": "src/"
+            "DanteB918\\LivewirePdfPreview\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Dante918\\LivewirePdfPreview"
+                "DanteB918\\LivewirePdfPreview"
             ]
         }
     },
