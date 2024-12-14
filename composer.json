@@ -6,7 +6,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DanteB918\\LivewirePdfPreview\\LivewirePdfPreview\\": "src/"
+            "DanteB918\\LivewirePdfPreview\\": "src/"
         }
     },
     "extra": {
