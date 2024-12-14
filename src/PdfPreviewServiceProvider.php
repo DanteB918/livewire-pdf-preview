@@ -1,7 +1,8 @@
 <?php
 
-namespace DanteB918;
+namespace DanteB918\LivewirePdfPreview;
 
+use DanteB918\LivewirePdfPreview;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 

@@ -6,13 +6,13 @@
     },
     "autoload": {
         "psr-4": {
-            "DanteB918\\LivewirePdfPreview\\": "src/"
+            "DanteB918\\LivewirePdfPreview\\LivewirePdfPreview\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "DanteB918\\PdfPreviewServiceProvider"
+                "DanteB918\\LivewirePdfPreview\\PdfPreviewServiceProvider"
             ]
         }
     },
