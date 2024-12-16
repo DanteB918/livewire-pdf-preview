@@ -11,13 +11,11 @@ class PdfPreviewServiceProvider extends ServiceProvider
     {
         Livewire::component('livewire-pdf-preview', LivewirePdfPreview::class);
 
-        // Define publishable assets
         $this->publishes([
-            __DIR__ . '../resources/js' => public_path('vendor/livewire-pdf-preview/js'),
-            __DIR__ . '../resources/css' => public_path('vendor/livewire-pdf-preview/css'),
-
+            __DIR__ . '/../resources/js' => public_path('vendor/livewire-pdf-preview/js'),
+            __DIR__ . '/../resources/css' => public_path('vendor/livewire-pdf-preview/css'),
         ], 'livewire-pdf-preview-assets');
 
-        $this->loadViewsFrom(__DIR__ . '../resources/views', 'livewire-pdf-preview');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-pdf-preview');
     }
 }
