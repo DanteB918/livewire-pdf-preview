@@ -2,6 +2,7 @@
 
 namespace DanteB918\LivewirePdfPreview;
 
+use DanteB918\LivewirePdfPreview\Console\InstallCommand;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
@@ -15,11 +16,21 @@ class PdfPreviewServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/js' => public_path('vendor/livewire-pdf-preview/js'),
             __DIR__ . '/../resources/css' => public_path('vendor/livewire-pdf-preview/css'),
-        ], 'livewire-pdf-preview-assets');
+        ], 'livewire-pdf-preview:assets');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-pdf-preview');
 
         $this->registerDirectives();
+        $this->registerCommands();
+    }
+
+    private function registerCommands()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                InstallCommand::class,
+            ]);
+        }
     }
 
     private function registerDirectives()
