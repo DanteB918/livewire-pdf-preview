@@ -2,6 +2,7 @@
 
 namespace DanteB918\LivewirePdfPreview;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
@@ -17,5 +18,24 @@ class PdfPreviewServiceProvider extends ServiceProvider
         ], 'livewire-pdf-preview-assets');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-pdf-preview');
+
+        $this->registerDirectives();
+    }
+
+    private function registerDirectives()
+    {
+        Blade::directive('livewirePdfPreviewScripts', function () {
+            $scriptsUrl = asset('/vendor/livewire-pdf-preview/js/pdf.js');
+            return <<<EOF
+                    <script src="$scriptsUrl"></script>
+                EOF;
+        });
+
+        Blade::directive('livewirePdfPreviewStyles', function () {
+            $cssUrl = asset('/vendor/livewire-pdf-preview/css/pdf.css');
+            return <<<EOF
+                    <link href="$cssUrl"></link>
+                EOF;
+        });
     }
 }
