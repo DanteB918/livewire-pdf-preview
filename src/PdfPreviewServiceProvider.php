@@ -18,6 +18,6 @@ class PdfPreviewServiceProvider extends ServiceProvider
 
         ], 'livewire-pdf-preview-assets');
 
-        $this->loadViewsFrom(__DIR__ . '../resources/views', 'livewire-pdf-previewer');
+        $this->loadViewsFrom(__DIR__ . '../resources/views', 'livewire-pdf-preview');
     }
 }
