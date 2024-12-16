@@ -45,7 +45,7 @@ class PdfPreviewServiceProvider extends ServiceProvider
         Blade::directive('livewirePdfPreviewStyles', function () {
             $cssUrl = asset('/vendor/livewire-pdf-preview/css/pdf.css');
             return <<<EOF
-                    <link href="$cssUrl"></link>
+                    <link rel="stylesheet" href="$cssUrl"></link>
                 EOF;
         });
     }
