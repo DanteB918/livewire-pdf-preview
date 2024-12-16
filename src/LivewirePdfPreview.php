@@ -17,6 +17,6 @@ class LivewirePdfPreview extends Component
             $this->base64Pdf = base64_encode($this->pdf->get());
         }
 
-        return view('livewire-pdf-preview::livewire-pdf-preview', ['base64Pdf' => $this->base64Pdf]);
+        return view('livewire-pdf-preview::canvas', ['base64Pdf' => $this->base64Pdf]);
     }
 }
