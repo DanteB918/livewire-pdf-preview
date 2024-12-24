@@ -1,6 +1,7 @@
 {
     "name": "danteb918/livewire-pdf-preview",
     "description": "Adds a component to easily preview livewire PDFs",
+    "license": "MIT",
     "require": {
         "livewire/livewire": "^3.5"
     },
