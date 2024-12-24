@@ -1,5 +1,5 @@
 <div>
-    @if ($pdf)
+    @if ($base64Pdf)
         <div id="pdf-parent">
             <canvas id="pdf-canvas" class="w-full border"></canvas>
         </div>

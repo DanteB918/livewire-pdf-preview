@@ -13,7 +13,7 @@ class LivewirePdfPreview extends Component
 
     public function render()
     {
-        if ($this->pdf) {
+        if ($this->pdf?->getMimeType() == 'application/pdf') {
             $this->base64Pdf = base64_encode($this->pdf->get());
         }
 
