@@ -49,6 +49,8 @@ You'll have a livewire component with an upload field, then the canvas, like so:
     <livewire:livewire-pdf-preview key="{{ now() }}" :pdf="$document" />
 ```
 
+Be sure that your component has the `WithFileUploads` trait, if you are using Livewire file uploads. More information can be found [in the Livewire documentation.](https://livewire.laravel.com/docs/uploads#storing-uploaded-files)
+
 It's preferred to always have the `key` attribute for this component so that it will re-render any time the PDF has been changed.
 
 
