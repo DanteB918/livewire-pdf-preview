@@ -1,5 +1,8 @@
 [![GitHub release](https://img.shields.io/github/release/DanteB918/livewire-pdf-preview.svg)](https://github.com/DanteB918/livewire-pdf-preview/releases/)
 
+## Example
+
+![livewire-pdf-preview-gif-2](https://github.com/user-attachments/assets/46649179-986c-47f8-90a2-d1a972f623f7)
 
 ## Installation
 
@@ -21,7 +24,7 @@ This command will export a `vendor/livewire-pdf-preview` folder under the `publi
 
 include the `@livewirePdfPreviewScripts` directive next to your other app scripts
 
-```html
+```blade
 @livewireScripts
 @livewirePdfScripts
 ```
@@ -40,7 +43,7 @@ Please follow each package/library instructions on how to set them properly in y
 
 You'll have a livewire component with an upload field, then the canvas, like so:
 
-```php
+```blade
     <input wire:model="document" type="file" name="document" />
 
     <livewire:livewire-pdf-preview key="{{ now() }}" :pdf="$document" />
