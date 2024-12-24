@@ -37,14 +37,9 @@ class PdfPreviewServiceProvider extends ServiceProvider
     {
         Blade::directive('livewirePdfPreviewScripts', function () {
             $scriptsUrl = asset('/vendor/livewire-pdf-preview/js/pdf.js');
-            return <<<EOF
-                    <script src="$scriptsUrl"></script>
-                EOF;
-        });
-
-        Blade::directive('livewirePdfPreviewStyles', function () {
             $cssUrl = asset('/vendor/livewire-pdf-preview/css/pdf.css');
             return <<<EOF
+                    <script src="$scriptsUrl"></script>
                     <link rel="stylesheet" href="$cssUrl"></link>
                 EOF;
         });

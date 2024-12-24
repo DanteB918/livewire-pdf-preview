@@ -14,14 +14,13 @@ Next, you must export the package public scripts. To do this run
 php artisan livewire-pdf-previewer:install
 ```
 
-This command will export a `vendor/livewire-pdf-preview` folder under the `public` directory of your app which is used by the `@livewirePdfPreviewScripts` and `@livewirePdfPreviewStyles` directives.
+This command will export a `vendor/livewire-pdf-preview` folder under the `public` directory of your app which is used by the `@livewirePdfPreviewScripts` directive.
 
 include the `@livewirePdfPreviewScripts` directive next to your other app scripts
 
 ```html
 @livewireScripts
 @livewirePdfScripts
-@livewirePdfPreviewStyles
 ```
 
 ## Requirements
