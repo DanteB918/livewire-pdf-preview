@@ -26,7 +26,7 @@ include the `@livewirePdfPreviewScripts` directive next to your other app script
 
 ```blade
 @livewireScripts
-@livewirePdfScripts
+@livewirePdfPreviewScripts
 ```
 
 ## Requirements
