@@ -1,7 +1,13 @@
 {
     "name": "danteb918/livewire-pdf-preview",
     "description": "Adds a component to easily preview livewire PDFs",
+    "keywords": [
+        "DanteB918",
+        "livewire-pdf-preview"
+    ],
+    "homepage": "https://github.com/DanteB918/livewire-pdf-preview",
     "license": "MIT",
+    "type": "library",
     "require": {
         "livewire/livewire": "^3.5"
     },
