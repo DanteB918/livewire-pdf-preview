@@ -1,3 +1,6 @@
+[![GitHub release](https://img.shields.io/github/release/DanteB918/livewire-pdf-preview.svg)](https://github.com/DanteB918/livewire-pdf-preview/releases/)
+
+
 ## Installation
 
 You can install the package via composer:
