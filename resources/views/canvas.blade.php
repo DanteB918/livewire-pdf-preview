@@ -25,6 +25,8 @@
                 const pdfContext = pdfCanvas.getContext('2d');
                 const pdfData = base64ToUint8Array(base64PDF);
 
+                pdfjsLib.GlobalWorkerOptions.workerSrc = '{{ $worker }}';
+
                 pdfjsLib.getDocument({ data: pdfData }).promise.then(pdf => {
                     pdf.getPage(1).then(page => {
                         const viewport = page.getViewport({ scale: 1.5 });

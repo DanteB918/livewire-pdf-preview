@@ -11,8 +11,12 @@ class LivewirePdfPreview extends Component
 
     public $base64Pdf = '';
 
+    public $worker = null;
+
     public function render()
     {
+        $this->worker ??= asset("/vendor/livewire-pdf-preview/js/pdf.worker.js");
+
         if ($this->pdf?->getMimeType() == 'application/pdf') {
             $this->base64Pdf = base64_encode($this->pdf->get());
         }

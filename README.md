@@ -17,7 +17,7 @@ Please skip the next few installation steps if your application already has PDF.
 Next, you must export the package public scripts. To do this run 
 
 ```bash
-php artisan livewire-pdf-previewer:install
+php artisan livewire-pdf-preview:install
 ```
 
 This command will export a `vendor/livewire-pdf-preview` folder under the `public` directory of your app which is used by the `@livewirePdfPreviewScripts` directive.
@@ -47,6 +47,12 @@ You'll have a livewire component with an upload field, then the canvas, like so:
     <input wire:model="document" type="file" name="document" />
 
     <livewire:livewire-pdf-preview key="{{ now() }}" :pdf="$document" />
+```
+
+If you already have PDF.js in your application, you'll have to specify the `pdf.worker.js` path and pass it to the component. This is not required if that JS was set up via the command + `@livewirePdfPreviewScripts` method.
+
+```blade
+    <livewire:livewire-pdf-preview key="{{ now() }}" :pdf="$document" :worker="node_modules/path/to/pdf.worker.js" />
 ```
 
 Be sure that your component has the `WithFileUploads` trait, if you are using Livewire file uploads. More information can be found [in the Livewire documentation.](https://livewire.laravel.com/docs/uploads#storing-uploaded-files)

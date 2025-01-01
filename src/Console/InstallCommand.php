@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class InstallCommand extends Command
 {
-    protected $signature = 'livewire-pdf-previewer:install';
+    protected $signature = 'livewire-pdf-preview:install';
 
     protected $description = 'Installs Livewire PDF Previewer';
 

@@ -39,7 +39,7 @@ class PdfPreviewServiceProvider extends ServiceProvider
             $scriptsUrl = asset('/vendor/livewire-pdf-preview/js/pdf.js');
             $cssUrl = asset('/vendor/livewire-pdf-preview/css/pdf.css');
             return <<<EOF
-                    <script src="$scriptsUrl"></script>
+                    <script src="$scriptsUrl" type="module"></script>
                     <link rel="stylesheet" href="$cssUrl"></link>
                 EOF;
         });
